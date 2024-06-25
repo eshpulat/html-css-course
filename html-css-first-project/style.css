@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 h1,
 h2,
 h3,
@@ -23,10 +28,13 @@ h1 {
 
 h2 {
     font-size: 40px;
+    margin-bottom: 30px;
 }
 
 h3 {
     font-size: 30px;
+    margin-bottom: 20px;
+    margin-top: 40px;
 }
 h4 {
     font-size: 30px;
@@ -37,12 +45,21 @@ h4 {
 
 p {
     font-size: 22px;
-
+    margin-bottom: 15px;
     line-height: 1.5;
+}
+ul,
+ol {
+    margin-left: 50px;
+    margin-bottom: 20px;
 }
 
 li {
     font-size: 20px;
+    margin-bottom: 10px;
+}
+li:last-child {
+    margin-bottom: 0;
 }
 
 /* footer p {
@@ -69,15 +86,35 @@ li {
 .related {
     list-style: none;
 }
+.post-img {
+    width: 100%;
+    height: auto;
+}
 
 .main-header {
     background-color: #f7f7f7;
+    padding: 20px 40px;
+    margin-bottom: 60px;
+    /* height: 80px; */
+}
+article {
+    margin-bottom: 60px;
+}
+.container {
+    width: 700px;
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin: 0 auto;
 }
 
 aside {
     background-color: #f7f7f7;
     border-top: 5px solid #1098ad;
     border-bottom: 5px solid #1098ad;
+    /* margin-top: 50px;
+    padding-bottom: 50px; */
+    padding: 50px 0;
+    width: 500px;
 }
 
 /* seudo-classes */
@@ -113,6 +150,61 @@ a:active {
     font-style: italic;
 }
 
+.post-header {
+    margin-bottom: 40px;
+}
+
 /* footer p {
     color: green !important;
 } */
+
+nav a:link {
+    /* background-color: orangered;
+    margin: 20px;
+    padding: 20px;
+    display: block; */
+
+    margin-right: 30px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+button {
+    font-size: 22px;
+    padding: 20px;
+    cursor: pointer;
+
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+}
+
+body {
+    position: relative;
+}
+
+h1::first-letter {
+    font-style: normal;
+    margin-right: 5px;
+}
+
+/* h3 + p::first-line {
+    color: red;
+} */
+h2 {
+    /* background-color: aqua; */
+    position: relative;
+}
+
+h2::after {
+    content: "TOP";
+    background-color: #ffe70e;
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+    padding: 5px 10px;
+    position: absolute;
+    color: #000;
+    top: -10px;
+    right: -25px;
+}

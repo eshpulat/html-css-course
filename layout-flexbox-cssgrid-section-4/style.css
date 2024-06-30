@@ -97,11 +97,11 @@ li:last-child {
 .main-header {
     background-color: #f7f7f7;
     padding: 20px 40px;
-    margin-bottom: 60px;
+    /* margin-bottom: 60px; */
     /* height: 80px; */
 }
 article {
-    margin-bottom: 60px;
+    /* margin-bottom: 60px; */
 }
 .container {
     width: 1200px;
@@ -291,7 +291,7 @@ footer {
     font-weight: normal;
     font-style: italic;
 }
-
+/*
 .row {
     display: flex;
     gap: 75px;
@@ -303,4 +303,28 @@ aside {
 article {
     flex: 1;
     margin-bottom: 60px;
+}*/
+
+/* css grid */
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    column-gap: 75px;
+    row-gap: 60px;
+    align-items: start;
+}
+
+.main-header {
+    grid-column: 1 / -1;
+}
+
+article {
+}
+
+aside {
+}
+
+footer {
+    grid-column: 1/ -1;
 }

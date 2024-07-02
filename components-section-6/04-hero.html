@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Omifood hero section</title>
+
+        <link
+            href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+            rel="stylesheet"
+        />
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            html {
+                font-family: "Rubik", sans-serif;
+                color: #444;
+            }
+            header {
+                /* background-color: red; */
+                height: 100vh;
+                position: relative;
+
+                background-image: linear-gradient(
+                        rgba(0, 0, 0, 0.6),
+                        rgba(0, 0, 0, 0.6)
+                    ),
+                    url(hero.jpg);
+                background-size: cover;
+                color: #fff;
+            }
+            .container {
+                margin: 0 auto;
+                width: 1200px;
+            }
+            .header-container {
+                width: 1200px;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+            .header-container-inner {
+                width: 50%;
+            }
+            nav {
+                font-size: 20px;
+                font-weight: 700;
+                display: flex;
+                justify-content: space-between;
+
+                padding-top: 32px;
+            }
+            h1 {
+                font-size: 52px;
+                margin-bottom: 32px;
+                line-height: 1.05;
+            }
+            p {
+                font-size: 20px;
+                line-height: 1.6;
+                margin-bottom: 48px;
+            }
+            .btn:link,
+            .btn:visited {
+                font-size: 20px;
+                font-weight: 600;
+                background-color: #e67e22;
+                color: #fff;
+                text-decoration: none;
+                display: inline-block;
+                padding: 16px 32px;
+                border-radius: 9px;
+            }
+
+            h2 {
+                font-size: 44px;
+                margin-bottom: 48px;
+            }
+            section {
+                padding: 96px 0;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav class="container">
+                <div>LOGO</div>
+                <div>NAVIGATION</div>
+            </nav>
+            <div class="header-container">
+                <div class="header-container-inner">
+                    <h1>
+                        A healty meal delivered to your door, every single day
+                    </h1>
+                    <p>
+                        The smart 365-days-per-yesr food subscrition that will
+                        make you eat healthy algain. Tailer to your personal
+                        testes and nutrational needs
+                    </p>
+                    <a href="#" class="btn">Start earing well</a>
+                </div>
+            </div>
+        </header>
+        <section>
+            <div class="container">
+                <h2>Same randon heading</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ullam deleniti eos architecto consequatur adipisci neque hic
+                    obcaecati perferendis officiis consequuntur, illum eum non
+                    dolores, sapiente enim natus reiciendis, veritatis
+                    necessitatibus. Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Sapiente, aliquid dolorem? At minus
+                    inventore aliquam error. Blanditiis ducimus enim, dolor
+                    inventore quis dolore eveniet, dicta beatae nostrum odit
+                    distinctio iure.
+                </p>
+            </div>
+        </section>
+    </body>
+</html>
